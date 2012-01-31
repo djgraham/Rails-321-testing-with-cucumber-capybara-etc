@@ -4,8 +4,11 @@ Given /^I have articles titled (.+)$/ do |titles|
   end
 end
 
-When /^I go to the list of (.+)$/ do |item|
-  visit ("/#{item}")
+When /^I go to the list of articles$/  do
+  visit("/articles")
 end
 
+Then /^I should see "([^"]*)"$/ do |title|
+   page.should have_content(title)
+end
 
