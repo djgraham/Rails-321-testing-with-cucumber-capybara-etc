@@ -43,7 +43,7 @@ group :test, :development do
   gem 'webrat'
 end
 
-group :test
+group :test do
   gem 'database_cleaner'
 end
 
