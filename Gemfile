@@ -41,6 +41,9 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'webrat'
+end
+
+group :test
   gem 'database_cleaner'
 end
 
