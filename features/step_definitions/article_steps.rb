@@ -4,3 +4,8 @@ Given /^I have articles titled (.+)$/ do |titles|
   end
 end
 
+When /^I go to the list of (.+)$/ do |item|
+  visit ("/#{item}")
+end
+
+
